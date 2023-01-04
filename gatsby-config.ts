@@ -9,6 +9,7 @@ const config: GatsbyConfig = {
   // Since `gatsby-plugin-typescript` is automatically included in Gatsby you
   // don't need to define it here (just if you need to change the options)
   plugins: [
+    `gatsby-plugin-pnpm`,
     {
       resolve: `gatsby-source-openweathermap`,
       options: {
@@ -18,7 +19,6 @@ const config: GatsbyConfig = {
         type: 'forecast',
       },
     },
-    `gatsby-plugin-pnpm`,
     {
       resolve: `gatsby-plugin-styled-components`,
     },
