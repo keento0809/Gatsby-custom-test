@@ -1,10 +1,10 @@
-import BasicButton from '@/components/Buttons/BasicButton';
+import MainContent from '@/features/MainContent';
+import Layout from '@/layouts/Layout';
 
 export default function Home() {
   return (
-    <main>
-      <p>Home</p>
-      <BasicButton />
-    </main>
+    <Layout>
+      <MainContent />
+    </Layout>
   );
 }
