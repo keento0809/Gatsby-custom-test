@@ -1,9 +1,10 @@
-import Title from '@/components/Title';
+import BasicButton from '@/components/Buttons/BasicButton';
 
 export default function Home() {
   return (
     <main>
-      <Title>Weather App</Title>
+      <p>Home</p>
+      <BasicButton />
     </main>
   );
 }

@@ -1,7 +1,9 @@
-import Title from '@/components/Title';
-
 const About = () => {
-  return <Title>About this app</Title>;
+  return (
+    <>
+      <p>About this app</p>
+    </>
+  );
 };
 
 export default About;
