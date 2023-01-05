@@ -1,3 +1,4 @@
+import checkCurrentPage from '@/helpers/checkCurrentPage';
 import { useState } from 'react';
 import { PathContext } from './pathContext';
 
@@ -6,13 +7,10 @@ interface Children {
 }
 
 const PathProvider = ({ children }: Children) => {
-  const [isTopPage, setIsTopPage] = useState(false);
-  //   const handleSetIsTopPage = () => {
-  //     setIsTopPage(!isTopPage);
-  //   };
+  const [isTopPage, setIsTopPage] = useState(checkCurrentPage());
   return (
     <PathContext.Provider value={{ isTopPage, setIsTopPage }}>
-      PathProvider
+      {children}
     </PathContext.Provider>
   );
 };

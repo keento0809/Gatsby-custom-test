@@ -7,8 +7,12 @@ const TopContentStyle = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  & h1 {
+  & .topContent_temperature {
     font-size: 4rem;
+    padding-bottom: 0.5rem;
+  }
+  & .topContent_weather {
+    padding-bottom: 3rem;
   }
 `;
 
@@ -26,7 +30,7 @@ export default function TopContent() {
       <TopContentStyle className="topContent">
         <div className="topContent_container">
           <h1 className="topContent_temperature">22°</h1>
-          <p>Sunny</p>
+          <p className="topContent_weather">Sunny</p>
           <p>5m/s</p>
         </div>
       </TopContentStyle>

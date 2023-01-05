@@ -13,10 +13,11 @@ const BasicButtonStyle = styled.button`
 
 interface Props {
   buttonText?: string;
+  onClick?: () => void;
 }
 
-const BasicButton = ({ buttonText = 'Get started' }: Props) => {
-  return <BasicButtonStyle>{buttonText}</BasicButtonStyle>;
+const BasicButton = ({ buttonText = 'Get started', onClick }: Props) => {
+  return <BasicButtonStyle onClick={onClick}>{buttonText}</BasicButtonStyle>;
 };
 
 export default BasicButton;

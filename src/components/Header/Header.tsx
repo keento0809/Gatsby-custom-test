@@ -1,6 +1,7 @@
 import styled from 'styled-components';
-import checkCurrentPage from '@/helpers/checkCurrentPage';
-import { useState } from 'react';
+import usePathContext from '@/hooks/usePathContext';
+import { useLocation } from '@reach/router';
+import { useEffect } from 'react';
 
 const HeaderStyle = styled.header`
   height: 15svh;
@@ -20,7 +21,7 @@ const HeaderStyle = styled.header`
 `;
 
 const Header = () => {
-  const [isTopPage, setIsTopPage] = useState(checkCurrentPage());
+  const { isTopPage } = usePathContext();
   return (
     <HeaderStyle className="header">
       <div className="header_container">
