@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 const BasicButtonStyle = styled.button`
   padding: 0.8rem 2rem;
-  background: #fff;
   border: 1px solid transparent;
   cursor: pointer;
   transition: all 0.3s ease-out;
@@ -14,10 +13,11 @@ const BasicButtonStyle = styled.button`
 
 interface Props {
   buttonText?: string;
+  onClick?: () => void;
 }
 
-const BasicButton = ({ buttonText = 'Get started' }: Props) => {
-  return <BasicButtonStyle>{buttonText}</BasicButtonStyle>;
+const BasicButton = ({ buttonText = 'Get started', onClick }: Props) => {
+  return <BasicButtonStyle onClick={onClick}>{buttonText}</BasicButtonStyle>;
 };
 
 export default BasicButton;

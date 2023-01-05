@@ -1,10 +1,15 @@
-import MainContent from '@/features/MainContent';
+import BottomContent from '@/components/features/MainContent/BottomContent';
+import TopContent from '@/components/features/MainContent/TopContent';
+import PathProvider from '@/context/PathProvider';
 import Layout from '@/layouts/Layout';
 
-export default function Home() {
+export default function Root() {
   return (
-    <Layout>
-      <MainContent />
-    </Layout>
+    <PathProvider>
+      <Layout>
+        <TopContent />
+        <BottomContent />
+      </Layout>
+    </PathProvider>
   );
 }

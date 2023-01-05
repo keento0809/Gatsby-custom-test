@@ -5,4 +5,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Libre Baskerville', serif;
+  letter-spacing: -0.5px;
+  background: #e6effa;
+  color: #2d3542;
 }
