@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import checkCurrentPage from '@/helpers/checkCurrentPage';
+import { useState } from 'react';
 
 const HeaderStyle = styled.header`
   height: 15svh;
@@ -18,11 +20,22 @@ const HeaderStyle = styled.header`
 `;
 
 const Header = () => {
+  const [isTopPage, setIsTopPage] = useState(checkCurrentPage());
   return (
     <HeaderStyle className="header">
       <div className="header_container">
-        <h3>Osaka, Japan</h3>
-        <span>Now</span>
+        {isTopPage && (
+          <div>
+            <h3>Gatsby Weather</h3>
+            <span>Start now</span>
+          </div>
+        )}
+        {!isTopPage && (
+          <div>
+            <h3>Osaka, Japan</h3>
+            <span>Now</span>
+          </div>
+        )}
       </div>
     </HeaderStyle>
   );

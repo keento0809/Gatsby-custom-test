@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { useLocation } from '@reach/router';
+import { useEffect, useState } from 'react';
 
 const TopContentStyle = styled.section`
   min-height: 55svh;
@@ -11,6 +13,14 @@ const TopContentStyle = styled.section`
 `;
 
 export default function TopContent() {
+  // const [isHomePage, setIsHomePage] = useState(false);
+  // const location = useLocation();
+  // useEffect(() => {
+  //   const { pathname } = location;
+  //   if (pathname === '/home') {
+  //     setIsHomePage(true);
+  //   }
+  // }, []);
   return (
     <>
       <TopContentStyle className="topContent">

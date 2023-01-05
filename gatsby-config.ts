@@ -10,6 +10,7 @@ const config: GatsbyConfig = {
   // don't need to define it here (just if you need to change the options)
   plugins: [
     `gatsby-plugin-pnpm`,
+    'gatsby-plugin-use-query-params',
     {
       resolve: `gatsby-source-openweathermap`,
       options: {

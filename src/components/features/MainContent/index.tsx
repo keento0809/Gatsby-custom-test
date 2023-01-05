@@ -1,4 +1,3 @@
-import styled from 'styled-components';
 import BottomContent from './BottomContent';
 import TopContent from './TopContent';
 
