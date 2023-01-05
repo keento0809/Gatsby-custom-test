@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 const BasicButtonStyle = styled.button`
   padding: 0.8rem 2rem;
-  background: #fff;
   border: 1px solid transparent;
   cursor: pointer;
   transition: all 0.3s ease-out;

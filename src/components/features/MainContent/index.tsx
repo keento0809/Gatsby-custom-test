@@ -1,17 +1,13 @@
 import styled from 'styled-components';
 import BottomContent from './BottomContent';
-import TopContent from './topContent';
-
-const MainContentStyle = styled.main`
-  min-height: 85svh;
-`;
+import TopContent from './TopContent';
 
 const MainContent = () => {
   return (
-    <MainContentStyle className="mainContent">
+    <div className="mainContent">
       <TopContent />
       <BottomContent />
-    </MainContentStyle>
+    </div>
   );
 };
 
