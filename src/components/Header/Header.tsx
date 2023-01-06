@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 import usePathContext from '@/hooks/usePathContext';
-import { useLocation } from '@reach/router';
-import { useEffect } from 'react';
 
 const HeaderStyle = styled.header`
   height: 15svh;

@@ -8,6 +8,9 @@ dotenv.config({
 const config: GatsbyConfig = {
   // Since `gatsby-plugin-typescript` is automatically included in Gatsby you
   // don't need to define it here (just if you need to change the options)
+  siteMetadata: {
+    title: 'My First Gatsby Site',
+  },
   plugins: [
     `gatsby-plugin-pnpm`,
     'gatsby-plugin-use-query-params',
