@@ -9,7 +9,9 @@ const config: GatsbyConfig = {
   // Since `gatsby-plugin-typescript` is automatically included in Gatsby you
   // don't need to define it here (just if you need to change the options)
   siteMetadata: {
-    title: 'My First Gatsby Site',
+    title: 'Gatsby weather',
+    description: 'A weather app powered by GatsbyJS and GraphQL',
+    copyright: '©︎ KENTO HONDA 2022. All Rights Reserved.',
   },
   plugins: [
     `gatsby-plugin-pnpm`,
