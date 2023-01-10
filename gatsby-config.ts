@@ -20,9 +20,21 @@ const config: GatsbyConfig = {
       resolve: `gatsby-source-openweathermap`,
       options: {
         apikey: process.env.GATSBY_OPEN_WEATHER_API_KEY,
-        location: 'York',
+        location: 'Vancouver',
         units: 'metric',
         type: 'forecast',
+      },
+    },
+    {
+      resolve: `gatsby-source-spotify`,
+      options: {
+        clientId: `<CLIENT_ID>`,
+        clientSecret: `<CLIENT_SECRET>`,
+        refreshToken: `<REFRESH_TOKEN>`,
+
+        fetchPlaylists: true, // optional. Set to false to disable fetching of your playlists
+        fetchRecent: true, // optional. Set to false to disable fetching of your recently played tracks
+        timeRanges: ['short_term', 'medium_term', 'long_term'], // optional. Set time ranges to be fetched
       },
     },
     {
